@@ -1,0 +1,42 @@
+<!--pages/shoppingeditor/index.wxml-->
+<!--购物车编辑  -->
+<view class="body">
+    <view class="header">
+  <!-- 左边的文字以及圆圈 -->
+    <view class="left">
+      <image class="yuan" src="images/quanyi.jpg"></image>
+      <view class="whole">全部</view>
+    </view>
+    <!-- 右边的完成二字 -->
+    <view class="right">完成</view>
+  </view>
+  <view class="main">
+      <view wx:for="{{array}}" class="list">
+        <view class="quan">
+          <image src="{{item.img}}" class="circle"></image>
+          <image src="{{item.images}}" class="active"></image>
+        </view>
+        <view class="cake">
+            <image src="{{item.cake}}" class="cakes"></image>
+        </view>
+            <view class="specifications">
+                <view class="top">
+                  <text class="reduce">-</text>
+                  <view class="frame">{{item.num}}</view>
+                  <text class="plus">+</text>
+                </view>
+                <view class="bottom" bindtap="showitem">{{item.spec}}
+                       <image src="images/kuang.jpg" class="photo"></image>
+                </view>
+                <view class="{{open?'display_show':'display_none'}}">{{item.spec}}</view>   
+            </view>
+            <view class="delete">删除</view>
+      </view>
+  </view>
+ 
+    <view class="footer">
+     <view class="rectangle"></view>
+       <view class="price">合计：￥{{price}}</view>
+       <view class="settlement">去结算</view>  
+  </view>
+</view>

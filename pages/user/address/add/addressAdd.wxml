@@ -1,0 +1,49 @@
+<view class='wrap'>
+  <form bindsubmit='addressSubmit'>
+    <view class='inputbox'>
+      <view class='lxr fl'>
+        <text>联  系  人</text>
+      </view>
+      <input name='lxr' class='lxript fl'placeholder='请输入联系人'></input>
+      <view class='clear'></view>
+    </view>
+    <view class='inputbox'>
+      <view class='lxr fl'>
+        <text>联系电话</text>
+      </view>
+      <input name='phone' bindblur='phoneBlur' class='lxript fl' placeholder='请输入电话' type='number'></input>
+      <view class='clear'></view>
+
+    </view>
+
+    <view class="section inputbox relative">
+      <view class='lxr fl'>
+        <text>所在地区</text>
+      </view>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          <input name='zone' disabled='disabled' class='lxript fl lxrbg' value='{{region[0]}}，{{region[1]}}，{{region[2]}}'>
+          <image class='absolute iimg' src='../images/right_arr_icon.png'></image>
+          </input>
+          <view class='clear'></view>
+        </view>
+      </picker>
+    </view>
+
+    <view class='inputbox'>
+      <view class='lxr fl'>
+        <text>详细地址</text>
+      </view>
+      <input name='address' placeholder='请输入详细地址' class='lxript fl' ></input>
+
+      <view class='clear'></view>
+
+    </view>
+
+    
+
+    <view>
+      <button form-type='submit'  hover-stay-time="5000" hover-class='hoverbtn' class='abutton absolute'>保 存</button>
+    </view>
+  </form>
+</view>

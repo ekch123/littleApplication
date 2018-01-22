@@ -1,0 +1,208 @@
+/* pages/shoppingeditor/index.wxss */
+.body{
+  width: 100%;
+  height: auto;
+}
+.header{
+  width:100%;
+  height: 89rpx;
+  background: #77b4c1;
+}
+.left{
+  width: 22%;
+  height: 89rpx;
+  float: left;
+  background: red；
+}
+.yuan{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 24rpx;
+  border-radius: 50%;
+  float: left;
+  margin-left: 30rpx;
+}
+.whole{
+  width: 42%;
+  height: auto;
+  float: right;
+  margin-top: 24rpx;
+  font-size: 30rpx;
+  font-family: "微软雅黑";
+  color: #fff;
+}
+.right{
+  width:12%;
+  height: auto;
+  margin-top: 24rpx;
+  margin-right:30rpx;
+  font-size: 30rpx;
+  font-family: "微软雅黑";
+  float: right;
+  color: #fff;
+}
+/*中间内容部分  */
+.main{
+  width:95%;
+  height:auto;
+  margin:0 auto;
+}
+.list{
+  height: 232rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.quan{
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+   margin-top: 100rpx;
+  position: relative;
+}
+.circle{
+  width:100%;
+  height: 100%;
+}
+.active{
+  width: 26rpx;
+  height: 26rpx;
+  position: absolute;
+  top:8rpx;
+  right:8rpx;
+}
+.cake{
+  width: 160rpx;
+  height: 160rpx;
+  margin-top:40rpx;
+  margin-left: 30rpx;
+  float: left;
+}
+.cakes{
+  width: 100%;
+  height: 100%;
+}
+.specifications{
+  width:42%;
+  height: 140rpx;
+  float: left;
+  margin-left: 40rpx;
+  margin-top: 50rpx;
+}
+.top{
+  height: 60rpx;
+}
+.reduce{
+  width:63rpx;
+  height: 57rpx;
+  float: left; 
+  border: 1rpx solid #ccc;
+  border-radius: 12rpx 0 0 12rpx;
+  text-align: center;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color: #ccc;
+}
+.frame{
+  width: 138rpx;
+  height: 57rpx;
+  float: left;
+  margin-left: 11rpx;
+  border: 1px solid #ccc;
+  font-size: 32rpx;
+  font-family: "微软雅黑";
+  color: #333;
+  text-align: center;
+  line-height: 51rpx;
+}
+.plus{
+  width: 63rpx;
+  height: 57rpx;
+  float: left;
+  margin-left: 11rpx;
+  border: 1rpx solid #ccc;
+  text-align: center;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color: #ccc;
+}
+.bottom{
+ height: 60rpx;
+ margin-top: 20rpx;
+ border: 1rpx solid #ccc;
+ border-radius: 12rpx;
+ font-family: "微软雅黑";
+ font-size: 30rpx;
+ color: #666;
+ text-align: center;
+ line-height: 60rpx;
+}
+.photo{
+  width:28rpx;
+  height: 13rpx;
+  margin-left: 20rpx;
+}
+.spec{
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color: #666;
+  text-align: center;
+  line-height: 55rpx;
+}
+.display_show{
+    display: block;
+    font-family: "微软雅黑";
+    font-size: 30rpx;
+    color: #666;
+    margin-left: -60rpx;
+    text-align: center;
+    line-height: 60rpx;
+}
+.display_none{
+    display: none;
+}
+.delete{
+  width:120rpx;
+  height: 140rpx;
+  float: right;
+  background: #58a4b4;
+  margin-top: 50rpx;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 135rpx;
+  border-radius: 12rpx;
+}
+.footer{
+  width:100%;
+  height: 215rpx;
+  background: #fff;
+  position: fixed;
+  bottom:-32rpx;
+}
+.rectangle{
+  width: 100%;
+  height: 125rpx;
+  background: #f0f0f0;
+}
+ .price{
+  width: 60%;
+  height: 90rpx;
+  float: left;
+  background: #fff;
+  text-align: center;
+  line-height: 95rpx;
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color: #333;
+}
+ .settlement{
+  width: 40%;
+  height: 90rpx;
+  float: left;
+  background: #58a4b4;
+  font-family: "微软雅黑";
+  font-size: 36rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 95rpx;
+}  

@@ -1,0 +1,24 @@
+<!--pages/integral/index.wxml-->
+<view class='top'>
+    <view class='active'>全部</view>
+    <view>蛋糕</view>
+</view>
+<view class='integral-commodity'>
+  <view class='commodity' wx:for="{{cakes}}" wx:for-index="idx" wx:for-item="itemName">
+    <image src='{{itemName.commodityimg}}'></image>
+    <view class='details'>
+      <view>{{itemName.commodityname}}</view>  
+      <view>会员优惠价</view>
+      <text class='discount'>￥{{itemName.discount}}</text><text class='original'>￥{{itemName.original}}</text>
+    </view>
+    <button bindtap="exchange" id='{{itemName.id}}' >{{itemName.integral}}积分兑换</button>
+  </view>
+  <view class="{{showView?'board1':'board'}}" bindtap='board'>
+    <view class='popup'>
+      <view>是否确定兑换</view>
+      <button bindtap='cancel'>取消</button>
+      <button bindtap='determine'>确定</button>
+    </view>
+  </view>
+  
+</view>

@@ -1,0 +1,24 @@
+<!--pages/member/index.wxml-->
+<view class='box'>
+    <view class='memberlist'>
+      <view wx:for="{{array}}" class='list' wx:for-item="itemName">
+        <view class='cateimg'>
+          <image src="{{itemName.img}}"></image>
+          <view class='introduce'>
+            <view>{{itemName.name}}</view>
+            <view>{{itemName.member}}</view>
+            <text class='discount'>￥{{itemName.discount}}</text>
+            <text class='originalPrice'>￥{{itemName.originalPrice}}</text>
+          </view> 
+          <button bindtap="exchange" id='{{itemName.id}}'>购买</button>
+        </view>
+      </view>
+      <view class="{{showView?'board1':'board'}}" bindtap='board'>
+        <view class='popup'>
+          <view>是否绑定手机成为会员享受优惠</view>
+          <button bindtap='cancel'>取消</button>
+          <button bindtap='determine'>去绑定</button>
+        </view>
+      </view>
+    </view>
+</view>
