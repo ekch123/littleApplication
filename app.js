@@ -14,6 +14,7 @@ App({
     })
     //请求数据保存在globalData
     var _this = this;
+    
     wx.request({
       url: 'http://cake.com/index/good/index', //仅为示例，并非真实的接口地址
       header: {
